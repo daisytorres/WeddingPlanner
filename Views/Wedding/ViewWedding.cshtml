@@ -2,8 +2,11 @@
     ViewData["Title"] = "OneWedding";
 }
 
-@model Wedding //to create new wedding 
+@model Wedding //to create new wedding
 @await Html.PartialAsync("_Nav")
+@{
+    int UniqueUserID = (int)Context.Session.GetInt32("UniqueUserID");
+}
 
 <div class="row">
     <div class="col-6">
@@ -17,11 +20,16 @@
             {
                 <li class="list-group-item">@rs.UserConfirmed.FirstName @rs.UserConfirmed.LastName</li>
             }
-            @if(Model.UsersGoing.Count == 0)
+            @if (Model.UsersGoing.Count == 0)
             {
                 <li>No one has RSVP'd yet.</li>
             }
         </ul>
+        @if (Model.UserId == UniqueUserID)
+        {
+            <a asp-action="EditWedding" asp-controller="Wedding" asp-route-id="@Model.WeddingId"
+                class="btn btn-primary">Edit</a>
+        }
     </div>
 
 </div>

@@ -18384,6 +18384,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/Wedding/EditWedding.cshtml",
+      "TargetPath": "Views\\Wedding\\EditWedding.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

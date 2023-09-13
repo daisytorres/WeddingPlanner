@@ -117,6 +117,40 @@ public class WeddingController : Controller //Update names here for whatever con
     }
 
 
+//route for editing wedding
+    [HttpGet("weddings/{id}/edit")]
+    public IActionResult EditWedding(int id)
+    {
+        Wedding? ToBeEdited = _context.Weddings.FirstOrDefault(w => w.WeddingId == id); 
+        if (ToBeEdited == null)
+        {
+            return RedirectToAction("Dashboard"); //if they manually edited URL or something we we got a null item
+        }
+        return View(ToBeEdited); //passing this in so that it can be our editing model in the viewing page
+    }
+
+
+
+//route to process view edit changes
+    [HttpPost("weddings/{id}/update")]
+    public IActionResult UpdateWedding(int id, Wedding editedWedding) 
+    {
+        Wedding? ToBeUpdated = _context.Weddings.FirstOrDefault(w => w.WeddingId == id);
+        if(!ModelState.IsValid || ToBeUpdated == null) 
+        {
+            return View("EditWedding", ToBeUpdated); //pass in the model/object (can do ToBeUdpated + add value tags in edit form for each one, OR editDish which keeps whatever changes they made )
+        } //otherwise updated all keys
+        ToBeUpdated.WedderOne = editedWedding.WedderOne;
+        ToBeUpdated.WedderTwo = editedWedding.WedderTwo;
+        ToBeUpdated.Date = editedWedding.Date;
+        ToBeUpdated.Address = editedWedding.Address;
+        ToBeUpdated.UpdatedAt = DateTime.Now;
+
+        _context.SaveChanges();
+
+        return RedirectToAction("ViewWedding", new {id=id});
+    }
+
 
 
 
