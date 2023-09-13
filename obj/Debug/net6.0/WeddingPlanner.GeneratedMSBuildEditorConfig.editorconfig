@@ -1,0 +1,64 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WeddingPlanner
+build_property.RootNamespace = WeddingPlanner
+build_property.ProjectDir = /Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/User/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9fTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/User/_Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9fUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/Wedding/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2VkZGluZy9EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/Wedding/NewWedding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2VkZGluZy9OZXdXZWRkaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/Wedding/ViewWedding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2VkZGluZy9WaWV3V2VkZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/Wedding/_Nav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2VkZGluZy9fTmF2LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/daisy/Desktop/Dojo_Assignments/C_Sharp/ORMs/BeltPrep/WeddingPlanner/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ea6ei0eauq

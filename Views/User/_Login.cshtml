@@ -1,0 +1,29 @@
+@model LogUser
+<div class="container mt-4">
+    <div class="card" style="border: 8px solid #ff1493;">
+        <div class="card-header" style="background-color: #ff69b4; color: white;">
+            <h1 class="display-4">Log In</h1>
+        </div>
+
+
+        <div class="card-body">
+            <form asp-action="LoginUser" asp-controller="User" method="post">
+
+                <div class="mb-3">
+                    <label asp-for="LogEmail">Email: </label>
+                    <input asp-for="LogEmail" class="form-control">
+                    <span asp-validation-for="LogEmail" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="LogPassword">Password: </label>
+                    <input asp-for="LogPassword" class="form-control">
+                    <span asp-validation-for="LogPassword" class="text-danger"></span>
+                </div>
+
+
+                <button class="btn btn-primary">Log In</button>
+            </form>
+        </div>
+    </div>
+</div>

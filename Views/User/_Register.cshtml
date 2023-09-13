@@ -1,0 +1,47 @@
+@model User
+<div class="container mt-4">
+    <div class="card" style="border: 8px solid #ff1493;">
+        <div class="card-header" style="background-color: #ff69b4; color: white;">
+            <h1 class="display-4">Register</h1>
+        </div>
+
+
+        <div class="card-body">
+            <form asp-action="RegisterUser" asp-controller="User" method="post">
+
+                <div class="mb-3">
+                    <label asp-for="FirstName">First Name: </label>
+                    <input asp-for="FirstName" class="form-control">
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="LastName">Last Name: </label>
+                    <input asp-for="LastName" class="form-control">
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Email">Email: </label>
+                    <input asp-for="Email" class="form-control">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Password">Password: </label>
+                    <input asp-for="Password" class="form-control">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="PasswordConfirm">Confirm Password: </label>
+                    <input asp-for="PasswordConfirm" class="form-control">
+                    <span asp-validation-for="PasswordConfirm" class="text-danger"></span>
+                </div>
+
+
+                <button class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+</div>

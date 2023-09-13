@@ -1,0 +1,48 @@
+@{
+    ViewData["Title"] = "NewWedding";
+}
+
+@model Wedding //to create new wedding 
+@await Html.PartialAsync("_Nav")
+
+<div class="container mt-4">
+    <div class="card" style="border: 8px solid #ff1493;">
+        <div class="card-header" style="background-color: #ff69b4; color: white;">
+            <h1 class="display-4">Plan a Wedding</h1>
+        </div>
+
+
+        <div class="card-body">
+            <form asp-action="CreateWedding" asp-controller="Wedding" method="POST">
+
+                <div class="mb-3">
+                    <label asp-for="WedderOne"> Wedder One: </label>
+                    <input asp-for="WedderOne" class="form-control">
+                    <span asp-validation-for="WedderOne" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="WedderTwo"> Wedder Two: </label>
+                    <input asp-for="WedderTwo" class="form-control">
+                    <span asp-validation-for="WedderTwo" class="text-danger"></span>
+                </div>
+
+
+                <div class="mb-3">
+                    <label asp-for="Date"> Date: </label>
+                    <input asp-for="Date" class="form-control">
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Address"> Address: </label>
+                    <input asp-for="Address" class="form-control">
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+
+                <button class="btn btn-primary">Create</button>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "OneWedding";
+}
+
+@model Wedding //to create new wedding 
+@await Html.PartialAsync("_Nav")
+
+<div class="row">
+    <div class="col-6">
+        <h1>@Model.WedderOne && @Model.WedderTwo</h1>
+        <p>Date: @Model.Date.ToString("MMM d, yyyy")</p>
+    </div>
+    <div class="col-6">
+        <p> Guests:</p>
+        <ul>
+            @foreach (UserRSVP rs in Model.UsersGoing)
+            {
+                <li class="list-group-item">@rs.UserConfirmed.FirstName @rs.UserConfirmed.LastName</li>
+            }
+            @if(Model.UsersGoing.Count == 0)
+            {
+                <li>No one has RSVP'd yet.</li>
+            }
+        </ul>
+    </div>
+
+</div>
